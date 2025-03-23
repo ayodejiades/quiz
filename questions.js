@@ -1922,6 +1922,59 @@ const questions = [
   },
   {
     question:
+      "What is the primary purpose of the 'ipconfig' command in Windows?",
+    options: [
+      "To test network connectivity",
+      "To display the IP configuration of a computer",
+      "To assign IP addresses to devices",
+      "To analyze network paths",
+    ],
+    answer: "To display the IP configuration of a computer",
+  },
+  {
+    question:
+      "Which of the following information is displayed by the 'ipconfig' command?",
+    options: [
+      "IP address, subnet mask, and default gateway",
+      "Network latency and packet loss",
+      "List of all connected devices",
+      "Network protocols in use",
+    ],
+    answer: "IP address, subnet mask, and default gateway",
+  },
+  {
+    question: "What does the 'ipconfig /release' command do?",
+    options: [
+      "Displays the IP configuration",
+      "Releases the current IP address assigned to the computer",
+      "Renews the IP address from the DHCP server",
+      "Tests network connectivity",
+    ],
+    answer: "Releases the current IP address assigned to the computer",
+  },
+  {
+    question: "What does the 'ipconfig /renew' command do?",
+    options: [
+      "Displays the IP configuration",
+      "Releases the current IP address assigned to the computer",
+      "Requests a new IP address from the DHCP server",
+      "Tests network connectivity",
+    ],
+    answer: "Requests a new IP address from the DHCP server",
+  },
+  {
+    question:
+      "Which of the following commands would you use to display detailed IP configuration information, including DNS servers?",
+    options: [
+      "ipconfig",
+      "ipconfig /all",
+      "ipconfig /release",
+      "ipconfig /renew",
+    ],
+    answer: "ipconfig /all",
+  },
+  {
+    question:
       "What is the primary purpose of a virtual machine (VM) in system virtualization?",
     options: [
       "To emulate a physical computer and run multiple operating systems on a single machine",
