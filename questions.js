@@ -1986,25 +1986,9 @@ const questions = [
     answer: "To handle requests on behalf of servers and improve security",
   },
   {
-    question: "In operating systems, what is the purpose of a page table?",
-    options: [
-      "To map virtual addresses to physical addresses in memory",
-      "To manage file storage on disk",
-      "To handle network communication",
-      "To allocate CPU time to processes",
-    ],
-    answer: "To map virtual addresses to physical addresses in memory",
-  },
-  {
     question: "Which of the following is an example of asymmetric encryption?",
     options: ["AES", "3DES", "RSA", "Blowfish"],
     answer: "RSA",
-  },
-  {
-    question:
-      "Which type of malware spreads without requiring user interaction?",
-    options: ["Trojan horse", "Worm", "Ransomware", "Spyware"],
-    answer: "Worm",
   },
   {
     question:
@@ -2048,17 +2032,6 @@ const questions = [
     ],
     answer:
       "It allows applications to run in isolated environments with shared OS resources",
-  },
-  {
-    question:
-      "Which of the following is a key feature of a serverless architecture?",
-    options: [
-      "It allows developers to run code without managing servers",
-      "It requires dedicated servers for each application",
-      "It is limited to local area networks (LANs)",
-      "It does not support scaling",
-    ],
-    answer: "It allows developers to run code without managing servers",
   },
   {
     question:
@@ -2129,29 +2102,25 @@ const questions = [
     answer: "To distinguish between human users and automated bots",
   },
   {
-    question:
-      "What is the primary purpose of a side-channel attack in cybersecurity?",
+    question: "What is the primary function of a modem in a computer network?",
     options: [
-      "To exploit indirect information leakage (e.g., power consumption or timing) to compromise a system",
-      "To encrypt data for secure transmission",
-      "To manage file sharing",
+      "To connect devices within a LAN",
+      "To connect a computer network to the internet",
+      "To store data for the network",
       "To assign IP addresses to devices",
     ],
-    answer:
-      "To exploit indirect information leakage (e.g., power consumption or timing) to compromise a system",
+    answer: "To connect a computer network to the internet",
   },
   {
-    question: "What is the primary purpose of a zero-trust security model?",
+    question: "What does a modem do to enable internet connectivity?",
     options: [
-      "To verify every user and device before granting access to resources",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To assign IP addresses to devices",
+      "Converts digital data to analog signals and vice versa",
+      "Routes data between multiple networks",
+      "Stores data for the network",
+      "Assigns IP addresses to devices",
     ],
-    answer:
-      "To verify every user and device before granting access to resources",
+    answer: "Converts digital data to analog signals and vice versa",
   },
-
   {
     question: "What is the primary purpose of a blockchain oracle?",
     options: [
@@ -2164,14 +2133,73 @@ const questions = [
   },
   {
     question:
-      "Which of the following is a key feature of a serverless function?",
+      "Which of the following is a device used to connect multiple computers in a Local Area Network (LAN)?",
+    options: ["Router", "Switch", "Server", "Modem"],
+    answer: "Switch",
+  },
+  {
+    question: "What is the primary function of a router in a computer network?",
     options: [
-      "It runs code in response to events without requiring server management",
-      "It requires dedicated servers for each application",
-      "It is limited to local area networks (LANs)",
-      "It does not support scaling",
+      "To connect devices within a LAN",
+      "To connect multiple networks and route data between them",
+      "To store data for the network",
+      "To assign IP addresses to devices",
+    ],
+    answer: "To connect multiple networks and route data between them",
+  },
+  {
+    question:
+      "Which device is used to connect a computer network to the internet?",
+    options: ["Switch", "Router", "Hub", "Modem"],
+    answer: "Modem",
+  },
+  {
+    question: "What is the role of a server in a computer network?",
+    options: [
+      "To connect devices within a LAN",
+      "To store and manage network resources like files and applications",
+      "To route data between networks",
+      "To assign IP addresses to devices",
+    ],
+    answer: "To store and manage network resources like files and applications",
+  },
+  {
+    question:
+      "Which of the following is a network protocol used for communication over the internet?",
+    options: ["HTTP", "FTP", "TCP/IP", "All of the above"],
+    answer: "All of the above",
+  },
+  {
+    question: "What is the purpose of a switch in a computer network?",
+    options: [
+      "To connect multiple networks",
+      "To connect devices within a LAN and forward data to the correct device",
+      "To store data for the network",
+      "To assign IP addresses to devices",
     ],
     answer:
-      "It runs code in response to events without requiring server management",
+      "To connect devices within a LAN and forward data to the correct device",
+  },
+  {
+    question:
+      "Which of the following is an example of a network storage device?",
+    options: ["Router", "Switch", "NAS (Network Attached Storage)", "Modem"],
+    answer: "NAS (Network Attached Storage)",
+  },
+  {
+    question: "Which of the following is a wireless networking device?",
+    options: ["Router", "Switch", "Access Point", "Modem"],
+    answer: "Access Point",
+  },
+  {
+    question:
+      "What is the purpose of a Network Interface Card (NIC) in a computer?",
+    options: [
+      "To connect the computer to a network",
+      "To store data for the network",
+      "To route data between networks",
+      "To assign IP addresses to devices",
+    ],
+    answer: "To connect the computer to a network",
   },
 ];
