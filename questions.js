@@ -614,9 +614,131 @@ const questions = [
     answer: "To encrypt internet traffic and provide anonymity",
   },
   {
-    question: "Which of the following is an example of a network topology?",
-    options: ["Star", "HTML", "CSS", "JavaScript"],
-    answer: "Star",
+    question: "Which of the following is an example of symmetric encryption?",
+    options: ["RSA", "AES", "Diffie-Hellman", "Elliptic Curve Cryptography"],
+    answer: "AES",
+  },
+  {
+    question:
+      "Which of the following is a characteristic of functional programming?",
+    options: [
+      "Encapsulation and inheritance",
+      "Using pure functions without changing state",
+      "Using loops and conditional statements",
+      "Executing commands in sequence",
+    ],
+    answer: "Using pure functions without changing state",
+  },
+  {
+    question:
+      "What is the main difference between system software and application software?",
+    options: [
+      "System software runs applications, while application software performs user tasks",
+      "Application software is free, while system software is paid",
+      "System software is installed by users, while application software is built-in",
+      "System software does not require updates, while application software does",
+    ],
+    answer:
+      "System software runs applications, while application software performs user tasks",
+  },
+  {
+    question: "What is the primary function of firmware in a computer system?",
+    options: [
+      "To provide a user interface for applications",
+      "To manage hardware at a low level before the OS loads",
+      "To store user documents and media files",
+      "To improve internet speed",
+    ],
+    answer: "To manage hardware at a low level before the OS loads",
+  },
+  {
+    question: "Which of the following best describes the BIOS?",
+    options: [
+      "A type of application software",
+      "An operating system component",
+      "A firmware responsible for hardware initialization",
+      "A high-speed storage device",
+    ],
+    answer: "A firmware responsible for hardware initialization",
+  },
+  {
+    question: "What does BIOS stand for?",
+    options: [
+      "Basic Input Output System",
+      "Binary Integrated Operating System",
+      "Basic Internet Operating Software",
+      "Boot Initialization and Optimization System",
+    ],
+    answer: "Basic Input Output System",
+  },
+  {
+    question:
+      "Which of the following is a key difference between BIOS and UEFI?",
+    options: [
+      "BIOS is older and supports larger storage devices than UEFI",
+      "UEFI supports a graphical user interface and secure boot, whereas BIOS does not",
+      "BIOS is faster and more secure than UEFI",
+      "UEFI can only be used on Linux-based systems",
+    ],
+    answer:
+      "UEFI supports a graphical user interface and secure boot, whereas BIOS does not",
+  },
+  {
+    question: "What does firmware do in an embedded system?",
+    options: [
+      "It provides real-time data analysis",
+      "It serves as the permanent software controlling hardware operations",
+      "It enhances battery life",
+      "It increases internet speed",
+    ],
+    answer:
+      "It serves as the permanent software controlling hardware operations",
+  },
+  {
+    question: "Which of the following is a common way to update firmware?",
+    options: [
+      "By reinstalling the operating system",
+      "Through a firmware flashing tool provided by the manufacturer",
+      "By clearing the system cache",
+      "By formatting the hard drive",
+    ],
+    answer: "Through a firmware flashing tool provided by the manufacturer",
+  },
+  {
+    question: "Which type of memory stores the BIOS firmware?",
+    options: ["RAM", "ROM", "Cache", "Hard disk"],
+    answer: "ROM",
+  },
+  {
+    question:
+      "What is the main function of the CMOS battery in relation to BIOS?",
+    options: [
+      "To power the CPU",
+      "To provide backup power for BIOS settings storage",
+      "To store the operating system",
+      "To increase boot speed",
+    ],
+    answer: "To provide backup power for BIOS settings storage",
+  },
+  {
+    question: "Which of the following is NOT a function of BIOS?",
+    options: [
+      "Performing the Power-On Self Test (POST)",
+      "Loading the operating system bootloader",
+      "Providing runtime services for the OS",
+      "Managing user-installed applications",
+    ],
+    answer: "Managing user-installed applications",
+  },
+  {
+    question: "What is the main advantage of UEFI over traditional BIOS?",
+    options: [
+      "It has a faster boot time and supports larger storage drives",
+      "It does not require firmware updates",
+      "It eliminates the need for an operating system",
+      "It only works on 32-bit processors",
+    ],
+    answer: "It has a faster boot time and supports larger storage drives",
   },
   {
     question: "What is the primary purpose of a DHCP server in a network?",
@@ -820,12 +942,12 @@ const questions = [
   {
     question: "What does `tracert google.com` do?",
     options: [
-      "Displays the route packets take to reach Google’s server",
-      "Checks if Google’s server is online",
+      "Displays the route packets take to reach Google's server",
+      "Checks if Google's server is online",
       "Lists all websites hosted by Google",
-      "Scans Google’s firewall security",
+      "Scans Google's firewall security",
     ],
-    answer: "Displays the route packets take to reach Google’s server",
+    answer: "Displays the route packets take to reach Google's server",
   },
   {
     question: "Which option in `ping` sets the time-to-live (TTL) value?",
