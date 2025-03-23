@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COS 105 Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <svg class="svg-defs">
+        <defs>
+          <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#6366f1" />
+            <stop offset="50%" stop-color="#8b5cf6" />
+            <stop offset="100%" stop-color="#d946ef" />
+          </linearGradient>
+        </defs>
+      </svg>
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz-container">
+      <div class="quiz-header-decoration">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+      </div>
+
+      <div class="content-wrapper">
+        <h1 class="quiz-title">
+          <span class="title-highlight">COS 105</span> Quiz
+          <div class="title-underline"></div>
+        </h1>
+
+        <!-- Setup Screen -->
+        <div id="setup-screen" class="setup-screen">
+          <div class="setup-section">
+            <h2>Quiz Settings <i class="fas fa-sliders-h"></i></h2>
+
+            <div class="setting-group">
+              <label for="question-count"
+                ><i class="fas fa-list-ol"></i> Number of Questions:</label
+              >
+              <div class="button-group animated">
+                <button class="count-btn" data-count="10">10</button>
+                <button class="count-btn" data-count="20">20</button>
+                <button class="count-btn" data-count="40">40</button>
+                <button class="count-btn" data-count="60">60</button>
+                <button class="count-btn" data-count="80">80</button>
+                <button class="count-btn" data-count="100">100</button>
+                <button class="count-btn" data-count="all">All</button>
+              </div>
+            </div>
+
+            <div class="setting-group">
+              <label for="timer-duration"
+                ><i class="fas fa-clock"></i> Time Limit (minutes):</label
+              >
+              <div class="button-group animated">
+                <button class="time-btn" data-time="5">5</button>
+                <button class="time-btn" data-time="10">10</button>
+                <button class="time-btn" data-time="15">15</button>
+                <button class="time-btn" data-time="20">20</button>
+                <button class="time-btn" data-time="30">30</button>
+                <button class="time-btn" data-time="40">40</button>
+                <button class="time-btn" data-time="0">No Limit</button>
+              </div>
+            </div>
+
+            <button id="start-quiz-btn" class="primary-btn pulse-animation">
+              <i class="fas fa-play"></i> Start Quiz
+            </button>
+          </div>
+        </div>
+
+        <!-- Quiz Screen (Initially Hidden) -->
+        <div id="quiz-screen" class="quiz-screen" style="display: none">
+          <div class="quiz-header">
+            <div class="quiz-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+              </div>
+              <span class="progress-text">
+                Question <span id="current-question-num">1</span>/<span
+                  id="total-questions"
+                  >10</span
+                >
+              </span>
+            </div>
+            <div class="timer" id="timer-display">
+              <i class="fas fa-hourglass-half pulse-slow"></i>
+              <span id="time">00:00</span>
+            </div>
+          </div>
+
+          <div class="question-container" id="question-container">
+            <p id="question" class="question-text"></p>
+            <div id="options" class="options"></div>
+          </div>
+
+          <div class="quiz-navigation">
+            <button id="next-btn" class="primary-btn">
+              Next Question <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Results Screen (Initially Hidden) -->
+        <div id="results-screen" class="results-screen" style="display: none">
+          <h2><i class="fas fa-award"></i> Quiz Results</h2>
+
+          <div class="score-display">
+            <div class="score-circle">
+                <svg class="score-ring" viewBox="0 0 100 100">
+                  <circle class="score-circle-bg" cx="50" cy="50" r="45"></circle>
+                  <circle class="score-circle-progress" id="score-circle-progress" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="score-inner">
+                  <span class="score-number" id="score-number">0/0</span>
+                  <span class="score-percent" id="score-percent">0%</span>
+                </div>
+              </div>
+          <p class="feedback" id="feedback-message"></p>
+
+
+          <div class="result-actions">
+            <button id="restart-btn" class="primary-btn">
+              <i class="fas fa-redo"></i> Try Again
+            </button>
+            <button id="new-settings-btn" class="secondary-btn">
+              <i class="fas fa-cog"></i> New Settings
+            </button>
+          </div>
+
+          <div class="confetti-container" id="confetti-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="copyright">
+          <p>
+            © 2025 Created by
+            <a href="https://ayodejiades.vercel.app/">Ayodeji</a>
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-link"
+            ><i class="fas fa-info-circle"></i> About</a
+          >
+          <a href="#" class="footer-link"
+            ><i class="fas fa-question-circle"></i> Help</a
+          >
+          <a href="#" class="footer-link"
+            ><i class="fas fa-shield-alt"></i> Privacy</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
