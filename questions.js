@@ -713,7 +713,6 @@ const questions = [
     ],
     answer: "Object-Oriented Programming",
   },
-
   {
     question:
       "Which of the following is a characteristic of functional programming?",
@@ -789,6 +788,86 @@ const questions = [
     ],
     answer:
       "It serves as the permanent software controlling hardware operations",
+  },
+  {
+    question: "What does IP stand for in the context of networking?",
+    options: [
+      "Internet Protocol",
+      "Internal Protocol",
+      "Internet Pathway",
+      "Internal Pathway",
+    ],
+    answer: "Internet Protocol",
+  },
+  {
+    question: "Which of the following is an example of an IPv4 address?",
+    options: [
+      "192.168.1.1",
+      "2001:db8::ff00:42:8329",
+      "fe80::1",
+      "300.168.1.1",
+    ],
+    answer: "192.168.1.1",
+  },
+  {
+    question: "What is the primary purpose of an IP address in a network?",
+    options: [
+      "To store data",
+      "To identify devices on a network",
+      "To process data",
+      "To display output",
+    ],
+    answer: "To identify devices on a network",
+  },
+  {
+    question: "Which of the following is an example of an IPv6 address?",
+    options: [
+      "192.168.1.1",
+      "2001:db8::ff00:42:8329",
+      "10.0.0.1",
+      "172.16.254.1",
+    ],
+    answer: "2001:db8::ff00:42:8329",
+  },
+  {
+    question: "How many bits are in an IPv4 address?",
+    options: ["32 bits", "64 bits", "128 bits", "256 bits"],
+    answer: "32 bits",
+  },
+  {
+    question: "How many bits are in an IPv6 address?",
+    options: ["32 bits", "64 bits", "128 bits", "256 bits"],
+    answer: "128 bits",
+  },
+  {
+    question: "What is the main advantage of IPv6 over IPv4?",
+    options: [
+      "Faster processing speed",
+      "Smaller address size",
+      "Larger address space",
+      "Simpler configuration",
+    ],
+    answer: "Larger address space",
+  },
+  {
+    question: "Which of the following is a private IP address range?",
+    options: [
+      "192.168.0.0 to 192.168.255.255",
+      "2001:db8::ff00:42:8329",
+      "8.8.8.8",
+      "172.32.0.0 to 172.63.255.255",
+    ],
+    answer: "192.168.0.0 to 192.168.255.255",
+  },
+  {
+    question: "What is the purpose of a subnet mask in IP addressing?",
+    options: [
+      "To identify the network portion of an IP address",
+      "To encrypt data",
+      "To increase the speed of data transmission",
+      "To store data",
+    ],
+    answer: "To identify the network portion of an IP address",
   },
   {
     question: "Which of the following is a common way to update firmware?",
@@ -1141,6 +1220,91 @@ const questions = [
       "A network connecting printers",
     ],
     answer: "The internet",
+  },
+  {
+    question:
+      "What is the first step in setting up a Local Area Network (LAN)?",
+    options: [
+      "Assign IP addresses",
+      "Connect devices using Ethernet cables or Wi-Fi",
+      "Enable network sharing",
+      "Test network connectivity",
+    ],
+    answer: "Connect devices using Ethernet cables or Wi-Fi",
+  },
+  {
+    question: "Which of the following is used to connect devices in a LAN?",
+    options: ["Ethernet cables", "USB cables", "HDMI cables", "Power cables"],
+    answer: "Ethernet cables",
+  },
+  {
+    question: "What is the purpose of assigning IP addresses in a LAN?",
+    options: [
+      "To store data",
+      "To identify devices on the network for communication",
+      "To increase internet speed",
+      "To encrypt data",
+    ],
+    answer: "To identify devices on the network for communication",
+  },
+  {
+    question:
+      "Which protocol can automatically assign IP addresses to devices in a LAN?",
+    options: ["HTTP", "FTP", "DHCP", "TCP"],
+    answer: "DHCP",
+  },
+  {
+    question: "What is the purpose of enabling network sharing in a LAN?",
+    options: [
+      "To increase internet speed",
+      "To allow devices to share files and printers",
+      "To encrypt data",
+      "To assign IP addresses",
+    ],
+    answer: "To allow devices to share files and printers",
+  },
+  {
+    question:
+      "Which command is used to test network connectivity between devices in a LAN?",
+    options: ["tracert", "ping", "ipconfig", "netstat"],
+    answer: "ping",
+  },
+  {
+    question: "What does the 'ping' command do in a LAN setup?",
+    options: [
+      "Assigns IP addresses to devices",
+      "Tests connectivity between devices by sending ICMP Echo Requests",
+      "Enables file sharing",
+      "Configures network settings",
+    ],
+    answer: "Tests connectivity between devices by sending ICMP Echo Requests",
+  },
+  {
+    question:
+      "Which of the following is an example of a private IP address range used in LANs?",
+    options: [
+      "192.168.0.0 to 192.168.255.255",
+      "8.8.8.8 to 8.8.8.255",
+      "172.32.0.0 to 172.63.255.255",
+      "2001:db8::ff00:42:8329",
+    ],
+    answer: "192.168.0.0 to 192.168.255.255",
+  },
+  {
+    question: "What is the purpose of a router in a LAN?",
+    options: [
+      "To store data",
+      "To connect multiple devices and manage traffic between them",
+      "To increase internet speed",
+      "To encrypt data",
+    ],
+    answer: "To connect multiple devices and manage traffic between them",
+  },
+  {
+    question:
+      "Which of the following is a common tool used to analyze network paths in a LAN?",
+    options: ["ping", "tracert", "ipconfig", "netstat"],
+    answer: "tracert",
   },
   {
     question: "What does ICMP stand for?",
