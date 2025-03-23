@@ -1,15 +1,5 @@
 const questions = [
   {
-    question: "What is the primary purpose of an operating system?",
-    options: [
-      "To provide internet access",
-      "To manage hardware resources",
-      "To create documents",
-      "To design websites",
-    ],
-    answer: "To manage hardware resources",
-  },
-  {
     question: "Which of the following is an example of application software?",
     options: ["Windows OS", "Linux Kernel", "Microsoft Word", "Device Drivers"],
     answer: "Microsoft Word",
@@ -34,16 +24,6 @@ const questions = [
     ],
     answer:
       "When two or more processes wait indefinitely for resources held by each other",
-  },
-  {
-    question: "What is the primary purpose of an operating system?",
-    options: [
-      "To provide a user interface",
-      "To manage hardware resources",
-      "To run applications",
-      "All of the above",
-    ],
-    answer: "All of the above",
   },
   {
     question:
@@ -108,6 +88,355 @@ const questions = [
   },
   {
     question:
+      "Which part of a CPU is responsible for executing arithmetic and logic operations?",
+    options: [
+      "Control Unit",
+      "Cache Memory",
+      "ALU (Arithmetic Logic Unit)",
+      "Registers",
+    ],
+    answer: "ALU (Arithmetic Logic Unit)",
+  },
+  {
+    question:
+      "Which type of cyberattack tricks users into revealing sensitive information?",
+    options: [
+      "Brute-force attack",
+      "Phishing attack",
+      "Denial-of-Service attack",
+      "Trojan attack",
+    ],
+    answer: "Phishing attack",
+  },
+  {
+    question: "What is the primary purpose of the OSI model?",
+    options: [
+      "To provide a framework for network communication",
+      "To encrypt data transmissions",
+      "To increase internet speed",
+      "To store network configurations",
+    ],
+    answer: "To provide a framework for network communication",
+  },
+  {
+    question: "Which protocol is commonly used to send emails?",
+    options: ["IMAP", "SMTP", "POP3", "HTTP"],
+    answer: "SMTP",
+  },
+  {
+    question:
+      "Which type of cyberattack attempts to overwhelm a server with excessive requests?",
+    options: [
+      "Phishing",
+      "Denial-of-Service (DoS)",
+      "Man-in-the-Middle (MITM)",
+      "SQL Injection",
+    ],
+    answer: "Denial-of-Service (DoS)",
+  },
+  {
+    question: "What is the primary function of an operating system?",
+    options: [
+      "To manage hardware resources",
+      "To create web pages",
+      "To design graphics",
+      "To execute user applications",
+    ],
+    answer: "To manage hardware resources",
+  },
+  {
+    question: "Which of the following is an example of system software?",
+    options: [
+      "Microsoft Word",
+      "Windows OS",
+      "Google Chrome",
+      "Adobe Photoshop",
+    ],
+    answer: "Windows OS",
+  },
+  {
+    question: "What is the purpose of process management in an OS?",
+    options: [
+      "To delete unnecessary files",
+      "To control program execution and multitasking",
+      "To manage user login sessions",
+      "To encrypt network traffic",
+    ],
+    answer: "To control program execution and multitasking",
+  },
+  {
+    question:
+      "Which component of an OS is responsible for managing memory allocation?",
+    options: ["Kernel", "File system", "Device driver", "Task scheduler"],
+    answer: "Kernel",
+  },
+  {
+    question: "What is the primary role of a file system in an OS?",
+    options: [
+      "To execute applications",
+      "To organize and store files",
+      "To manage system security",
+      "To configure device drivers",
+    ],
+    answer: "To organize and store files",
+  },
+  {
+    question: "What is an IP address used for?",
+    options: [
+      "To identify a device on a network",
+      "To encrypt user passwords",
+      "To store files in the cloud",
+      "To increase processing speed",
+    ],
+    answer: "To identify a device on a network",
+  },
+  {
+    question: "What does DHCP stand for?",
+    options: [
+      "Dynamic Host Configuration Protocol",
+      "Data Hosting Control Protocol",
+      "Distributed Hardware Configuration Process",
+      "Domain Host Connection Protocol",
+    ],
+    answer: "Dynamic Host Configuration Protocol",
+  },
+  {
+    question: "Which of the following best describes a firewall?",
+    options: [
+      "A software that speeds up processing",
+      "A security system that monitors and controls network traffic",
+      "A tool used for data compression",
+      "A protocol for wireless communication",
+    ],
+    answer: "A security system that monitors and controls network traffic",
+  },
+  {
+    question: "What is a primary function of network protocols?",
+    options: [
+      "To encrypt passwords",
+      "To define rules for data transmission",
+      "To speed up CPU processing",
+      "To store user data",
+    ],
+    answer: "To define rules for data transmission",
+  },
+  {
+    question:
+      "Which of the following is an example of an interpreted programming language?",
+    options: ["C", "Java", "Python", "Assembly"],
+    answer: "Python",
+  },
+  {
+    question:
+      "Which network topology connects all devices to a single central hub?",
+    options: [
+      "Bus topology",
+      "Star topology",
+      "Ring topology",
+      "Mesh topology",
+    ],
+    answer: "Star topology",
+  },
+  {
+    question: "What is the main function of a router in a network?",
+    options: [
+      "To provide power to devices",
+      "To manage local storage",
+      "To forward data between networks",
+      "To protect against malware",
+    ],
+    answer: "To forward data between networks",
+  },
+  {
+    question:
+      "Which type of malware encrypts user files and demands payment for decryption?",
+    options: ["Trojan horse", "Ransomware", "Spyware", "Adware"],
+    answer: "Ransomware",
+  },
+  {
+    question:
+      "Which protocol is responsible for mapping IP addresses to MAC addresses in a network?",
+    options: ["DNS", "DHCP", "ARP", "ICMP"],
+    answer: "ARP",
+  },
+  {
+    question: "Which protocol is used for secure file transfer over a network?",
+    options: ["HTTP", "FTP", "SFTP", "POP3"],
+    answer: "SFTP",
+  },
+  {
+    question: "Which network protocol is used to send and receive web pages?",
+    options: ["FTP", "HTTP", "SMTP", "SNMP"],
+    answer: "HTTP",
+  },
+  {
+    question: "What is the main purpose of the TCP protocol?",
+    options: [
+      "To encrypt network traffic",
+      "To provide reliable, connection-oriented communication",
+      "To dynamically assign IP addresses",
+      "To translate domain names to IP addresses",
+    ],
+    answer: "To provide reliable, connection-oriented communication",
+  },
+  {
+    question: "Which protocol is used for email transmission?",
+    options: ["SMTP", "IMAP", "POP3", "DNS"],
+    answer: "SMTP",
+  },
+  {
+    question:
+      "Which protocol is responsible for resolving domain names into IP addresses?",
+    options: ["HTTP", "TCP", "DNS", "ARP"],
+    answer: "DNS",
+  },
+  {
+    question: "What type of protocol is UDP?",
+    options: [
+      "Connection-oriented",
+      "Connectionless",
+      "Encrypted",
+      "Error-correcting",
+    ],
+    answer: "Connectionless",
+  },
+  {
+    question:
+      "Which protocol is used for retrieving emails from a mail server?",
+    options: ["SMTP", "IMAP", "FTP", "DHCP"],
+    answer: "IMAP",
+  },
+  {
+    question: "Which protocol is commonly used for network device management?",
+    options: ["SNMP", "FTP", "TCP", "HTTP"],
+    answer: "SNMP",
+  },
+  {
+    question:
+      "Which network protocol provides connectionless communication and is often used for streaming services?",
+    options: ["TCP", "UDP", "ICMP", "ARP"],
+    answer: "UDP",
+  },
+  {
+    question:
+      "Which protocol is used to determine the path data takes across networks?",
+    options: ["DNS", "SMTP", "ICMP", "FTP"],
+    answer: "ICMP",
+  },
+  {
+    question:
+      "Which protocol ensures secure communication over a network by encrypting data?",
+    options: ["FTP", "SSH", "POP3", "HTTP"],
+    answer: "SSH",
+  },
+  {
+    question:
+      "Which protocol is used to transfer files between a client and a server?",
+    options: ["FTP", "TCP", "SMTP", "ICMP"],
+    answer: "FTP",
+  },
+  {
+    question:
+      "Which protocol is used by web browsers to establish secure connections?",
+    options: ["HTTP", "FTP", "SSL/TLS", "IMAP"],
+    answer: "SSL/TLS",
+  },
+  {
+    question:
+      "Which protocol is responsible for automatically assigning IP addresses to devices?",
+    options: ["DNS", "DHCP", "NTP", "FTP"],
+    answer: "DHCP",
+  },
+  {
+    question: "What is the main function of the ICMP protocol?",
+    options: [
+      "To provide email services",
+      "To manage routing tables",
+      "To send error messages and diagnostics",
+      "To encrypt network packets",
+    ],
+    answer: "To send error messages and diagnostics",
+  },
+  {
+    question:
+      "Which protocol is used to synchronize time across multiple devices in a network?",
+    options: ["NTP", "SNMP", "ICMP", "DNS"],
+    answer: "NTP",
+  },
+  {
+    question: "Which transport layer protocol guarantees data delivery?",
+    options: ["TCP", "UDP", "ICMP", "FTP"],
+    answer: "TCP",
+  },
+  {
+    question: "What is the main advantage of cloud computing?",
+    options: [
+      "Improved battery life",
+      "Lower electricity consumption",
+      "Remote access to data and services",
+      "Increased CPU speed",
+    ],
+    answer: "Remote access to data and services",
+  },
+  {
+    question: "Which command is used to test network connectivity in Windows?",
+    options: ["ping", "netstat", "ipconfig", "tracert"],
+    answer: "ping",
+  },
+  {
+    question: "What does BGP stand for in networking?",
+    options: [
+      "Border Gateway Protocol",
+      "Broadband Gateway Pathway",
+      "Basic Gateway Processing",
+      "Bandwidth Generating Protocol",
+    ],
+    answer: "Border Gateway Protocol",
+  },
+  {
+    question:
+      "Which protocol is responsible for establishing secure shell connections?",
+    options: ["SSH", "SMTP", "FTP", "IMAP"],
+    answer: "SSH",
+  },
+  {
+    question: "What is the function of the ARP protocol?",
+    options: [
+      "To map IP addresses to MAC addresses",
+      "To encrypt network traffic",
+      "To manage domain name resolution",
+      "To monitor network security",
+    ],
+    answer: "To map IP addresses to MAC addresses",
+  },
+  {
+    question: "What does VLAN stand for in networking?",
+    options: [
+      "Virtual Local Area Network",
+      "Variable Link Access Node",
+      "Verified Local Address Network",
+      "Virtual Link and Network",
+    ],
+    answer: "Virtual Local Area Network",
+  },
+  {
+    question: "What is the primary function of an antivirus program?",
+    options: [
+      "To delete old files",
+      "To prevent unauthorized software installations",
+      "To detect and remove malicious software",
+      "To manage network traffic",
+    ],
+    answer: "To detect and remove malicious software",
+  },
+  {
+    question:
+      "Which data structure operates in a Last In, First Out (LIFO) manner?",
+    options: ["Queue", "Stack", "Linked List", "Array"],
+    answer: "Stack",
+  },
+  {
+    question:
       "Which of the following techniques is commonly used to prevent SQL Injection attacks?",
     options: [
       "Using strong passwords",
@@ -167,16 +496,6 @@ const questions = [
     answer: "HTTPS",
   },
   {
-    question: "What is the primary purpose of an IP address in a network?",
-    options: [
-      "To identify a device on the network",
-      "To encrypt data during transmission",
-      "To store files on a server",
-      "To manage user permissions",
-    ],
-    answer: "To identify a device on the network",
-  },
-  {
     question: "Which of the following is an example of a utility program?",
     options: [
       "Microsoft Word",
@@ -185,6 +504,11 @@ const questions = [
       "Adobe Photoshop",
     ],
     answer: "Antivirus software",
+  },
+  {
+    question: "Which protocol does the `ping` command use to send packets?",
+    options: ["TCP", "UDP", "ICMP", "ARP"],
+    answer: "ICMP",
   },
   {
     question: "What is the main purpose of a CPU in a computer system?",
@@ -235,21 +559,6 @@ const questions = [
       "Antivirus Software",
     ],
     answer: "Smart Thermostat",
-  },
-  {
-    question: "Which of the following is an example of a network protocol?",
-    options: ["TCP/IP", "HTML", "CSS", "JavaScript"],
-    answer: "TCP/IP",
-  },
-  {
-    question: "What is the primary purpose of a router in a network?",
-    options: [
-      "To forward data packets between networks",
-      "To store data securely",
-      "To manage file sharing",
-      "To encrypt data during transmission",
-    ],
-    answer: "To forward data packets between networks",
   },
   {
     question:
@@ -331,16 +640,6 @@ const questions = [
     answer: "To allow multiple devices to share a single public IP address",
   },
   {
-    question: "Which of the following is an example of a cybersecurity attack?",
-    options: [
-      "Denial-of-Service (DoS)",
-      "File Management",
-      "Multitasking",
-      "Resource Allocation",
-    ],
-    answer: "Denial-of-Service (DoS)",
-  },
-  {
     question: "What is the primary purpose of a proxy server?",
     options: [
       "To act as an intermediary between clients and servers",
@@ -366,6 +665,82 @@ const questions = [
     answer: "HTTP",
   },
   {
+    question: "What does FTP stand for?",
+    options: [
+      "File Transfer Protocol",
+      "Fast Transmission Process",
+      "Firewall Testing Program",
+      "Flexible Transport Pathway",
+    ],
+    answer: "File Transfer Protocol",
+  },
+  {
+    question: "What does TCP stand for?",
+    options: [
+      "Transmission Control Protocol",
+      "Transport Communication Process",
+      "Traffic Control Protocol",
+      "Time Control Protocol",
+    ],
+    answer: "Transmission Control Protocol",
+  },
+  {
+    question: "What does DNS stand for?",
+    options: [
+      "Domain Name System",
+      "Dynamic Network Service",
+      "Data Navigation Structure",
+      "Digital Numbering Scheme",
+    ],
+    answer: "Domain Name System",
+  },
+  {
+    question: "What does SMTP stand for?",
+    options: [
+      "Simple Mail Transfer Protocol",
+      "Secure Messaging and Transfer Process",
+      "System Management Transport Protocol",
+      "Smart Mail Tracking Protocol",
+    ],
+    answer: "Simple Mail Transfer Protocol",
+  },
+  {
+    question: "What does HTTPS stand for?",
+    options: [
+      "HyperText Transfer Protocol Secure",
+      "High-Tech Transfer Protocol System",
+      "Hybrid Transport Protocol Secure",
+      "Host Tracking Process Secure",
+    ],
+    answer: "HyperText Transfer Protocol Secure",
+  },
+  {
+    question: "What does POP3 stand for?",
+    options: [
+      "Post Office Protocol 3",
+      "Packet Optimized Process",
+      "Primary Online Processing",
+      "Protocol for Online Passwords",
+    ],
+    answer: "Post Office Protocol 3",
+  },
+  {
+    question: "What does Telnet protocol do?",
+    options: [
+      "Provides a command-line interface for remote system access",
+      "Encrypts network connections",
+      "Transfers files between remote computers",
+      "Synchronizes time between devices",
+    ],
+    answer: "Provides a command-line interface for remote system access",
+  },
+  {
+    question:
+      "Which protocol is used to troubleshoot network paths by tracing packet routes?",
+    options: ["Traceroute", "Ping", "NTP", "IMAP"],
+    answer: "Traceroute",
+  },
+  {
     question: "What is the primary purpose of a DNS (Domain Name System)?",
     options: [
       "To translate domain names into IP addresses",
@@ -387,15 +762,75 @@ const questions = [
     answer: "Amazon Web Services (AWS)",
   },
   {
-    question:
-      "What is the primary purpose of a backup system in fault tolerance?",
+    question: "What information does the `ping` command return?",
     options: [
-      "To prevent data loss in case of failure",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To encrypt data during transmission",
+      "The number of hops between the source and destination",
+      "The IP address of the device",
+      "The time taken for packets to reach the destination and return",
+      "The list of all connected devices on the network",
     ],
-    answer: "To prevent data loss in case of failure",
+    answer: "The time taken for packets to reach the destination and return",
+  },
+  {
+    question:
+      "By default, how many echo request packets does `ping` send in Windows?",
+    options: ["4", "5", "10", "Unlimited"],
+    answer: "4",
+  },
+  {
+    question: "What does the `-t` option do in the `ping` command?",
+    options: [
+      "Sends packets continuously until manually stopped",
+      "Displays only lost packets",
+      "Shows the path taken by packets",
+      "Sends packets with encryption",
+    ],
+    answer: "Sends packets continuously until manually stopped",
+  },
+  {
+    question: "What does `ping -n 10 8.8.8.8` do?",
+    options: [
+      "Pings 8.8.8.8 ten times",
+      "Runs a continuous ping",
+      "Pings the address with encryption",
+      "Traces the route to 8.8.8.8",
+    ],
+    answer: "Pings 8.8.8.8 ten times",
+  },
+  {
+    question: "How can you use `tracert` to limit the number of hops?",
+    options: [
+      "`tracert -h <number>`",
+      "`tracert -l <number>`",
+      "`tracert -w <number>`",
+      "`tracert -t <number>`",
+    ],
+    answer: "`tracert -h <number>`",
+  },
+  {
+    question: "Which of the following might cause a `ping` request to fail?",
+    options: [
+      "A firewall blocking ICMP traffic",
+      "A weak Wi-Fi signal",
+      "An expired DNS record",
+      "A slow processor on the remote server",
+    ],
+    answer: "A firewall blocking ICMP traffic",
+  },
+  {
+    question: "What does `tracert google.com` do?",
+    options: [
+      "Displays the route packets take to reach Google’s server",
+      "Checks if Google’s server is online",
+      "Lists all websites hosted by Google",
+      "Scans Google’s firewall security",
+    ],
+    answer: "Displays the route packets take to reach Google’s server",
+  },
+  {
+    question: "Which option in `ping` sets the time-to-live (TTL) value?",
+    options: ["`ping -t`", "`ping -n`", "`ping -i`", "`ping -s`"],
+    answer: "`ping -i`",
   },
   {
     question: "What is the primary purpose of a load balancer in a network?",
@@ -406,17 +841,6 @@ const questions = [
       "To encrypt data during transmission",
     ],
     answer: "To distribute workload across multiple servers",
-  },
-  {
-    question:
-      "What is the primary purpose of a RAID system in fault tolerance?",
-    options: [
-      "To provide redundancy and prevent data loss",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To encrypt data during transmission",
-    ],
-    answer: "To provide redundancy and prevent data loss",
   },
   {
     question: "Which of the following is an example of a network topology?",
@@ -463,11 +887,6 @@ const questions = [
       "Error Detection",
     ],
     answer: "Redundancy",
-  },
-  {
-    question: "Which of the following is an example of a network protocol?",
-    options: ["FTP", "HTML", "CSS", "JavaScript"],
-    answer: "FTP",
   },
   {
     question: "Which of the following is an example of a programming language?",
@@ -662,17 +1081,6 @@ const questions = [
       "To improve search engine rankings",
     ],
     answer: "To detect and block phishing sites",
-  },
-  {
-    question:
-      "What is the primary purpose of a backup system in fault tolerance?",
-    options: [
-      "To prevent data loss in case of failure",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To encrypt data during transmission",
-    ],
-    answer: "To prevent data loss in case of failure",
   },
   {
     question:
@@ -882,15 +1290,26 @@ const questions = [
       "It minimizes the kernel's functionality and runs most services in user space",
   },
   {
+    question: "Which of the following is an example of asymmetric encryption?",
+    options: ["AES", "3DES", "RSA", "Blowfish"],
+    answer: "RSA",
+  },
+  {
     question:
-      "What is the primary purpose of a distributed denial-of-service (DDoS) attack?",
+      "Which type of malware spreads without requiring user interaction?",
+    options: ["Trojan horse", "Worm", "Ransomware", "Spyware"],
+    answer: "Worm",
+  },
+  {
+    question:
+      "Which attack exploits unvalidated input to execute arbitrary SQL queries?",
     options: [
-      "To overwhelm a target system with traffic and make it unavailable",
-      "To encrypt data for secure transmission",
-      "To manage file sharing",
-      "To detect unauthorized access to a network",
+      "Cross-Site Scripting (XSS)",
+      "SQL Injection",
+      "Buffer Overflow",
+      "Session Hijacking",
     ],
-    answer: "To overwhelm a target system with traffic and make it unavailable",
+    answer: "SQL Injection",
   },
   {
     question: "Which of the following is a key feature of a NoSQL database?",
@@ -916,9 +1335,9 @@ const questions = [
   {
     question: "In cybersecurity, what is the purpose of a digital signature?",
     options: [
-      "To verify the authenticity and integrity of a message or document",
       "To encrypt data for secure transmission",
       "To manage file permissions",
+      "To verify the authenticity and integrity of a message or document",
       "To increase internet speed",
     ],
     answer: "To verify the authenticity and integrity of a message or document",
