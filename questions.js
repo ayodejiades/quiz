@@ -532,12 +532,7 @@ const questions = [
   },
   {
     question: "Which of the following is an example of a cybersecurity threat?",
-    options: [
-      "File Management",
-      "Multitasking",
-      "Phishing",
-      "Resource Allocation",
-    ],
+    options: ["Fhishing", "Fishing", "Phishing", "Phising"],
     answer: "Phishing",
   },
   {
@@ -618,6 +613,107 @@ const questions = [
     options: ["RSA", "AES", "Diffie-Hellman", "Elliptic Curve Cryptography"],
     answer: "AES",
   },
+  {
+    question:
+      "What is the default wait-time (timeout) for each reply in the 'tracert' command?",
+    options: [
+      "100 milliseconds",
+      "1000 milliseconds",
+      "4000 milliseconds",
+      "500 milliseconds",
+    ],
+    answer: "4000 milliseconds",
+  },
+  {
+    question:
+      "Which programming paradigm uses a step-by-step approach with functions and loops to solve problems?",
+    options: [
+      "Object-Oriented Programming",
+      "Functional Programming",
+      "Procedural Programming",
+      "Event-Driven Programming",
+    ],
+    answer: "Procedural Programming",
+  },
+  {
+    question:
+      "What is the term for the ability of a function to be passed as an argument to another function in functional programming?",
+    options: [
+      "Encapsulation",
+      "Inheritance",
+      "First-Class Functions",
+      "Polymorphism",
+    ],
+    answer: "First-Class Functions",
+  },
+  {
+    question:
+      "What is the primary unit of organization in Object-Oriented Programming (OOP)?",
+    options: ["Functions", "Loops", "Objects", "Variables"],
+    answer: "Objects",
+  },
+  {
+    question:
+      "In OOP, what is the term for one class inheriting properties and methods from another class?",
+    options: ["Polymorphism", "Encapsulation", "Inheritance", "Abstraction"],
+    answer: "Inheritance",
+  },
+  {
+    question:
+      "Which programming paradigm treats computation as the evaluation of mathematical functions and avoids changing state?",
+    options: [
+      "Procedural Programming",
+      "Object-Oriented Programming",
+      "Functional Programming",
+      "Imperative Programming",
+    ],
+    answer: "Functional Programming",
+  },
+  {
+    question:
+      "What is the term for a function that always returns the same output for the same input and has no side effects?",
+    options: [
+      "Recursive Function",
+      "Pure Function",
+      "Anonymous Function",
+      "Higher-Order Function",
+    ],
+    answer: "Pure Function",
+  },
+  {
+    question:
+      "Which of the following is a characteristic of functional programming?",
+    options: [
+      "Mutable data",
+      "Stateful functions",
+      "Immutability",
+      "Inheritance",
+    ],
+    answer: "Immutability",
+  },
+  {
+    question:
+      "In Python, which of the following is an example of a lambda function?",
+    options: [
+      "def add(a, b): return a + b",
+      "lambda x: x * x",
+      "class Car: pass",
+      "for i in range(10): print(i)",
+    ],
+    answer: "lambda x: x * x",
+  },
+  {
+    question:
+      "Which programming paradigm organizes code into objects that contain both data (attributes) and behavior (methods)?",
+    options: [
+      "Procedural Programming",
+      "Functional Programming",
+      "Object-Oriented Programming",
+      "Declarative Programming",
+    ],
+    answer: "Object-Oriented Programming",
+  },
+
   {
     question:
       "Which of the following is a characteristic of functional programming?",
@@ -749,6 +845,362 @@ const questions = [
       "To store data securely",
     ],
     answer: "To automatically assign IP addresses to devices",
+  },
+  {
+    question: "What does 'integrity' mean in cybersecurity?",
+    options: [
+      "Ensuring data is accessible to everyone",
+      "Ensuring data is accurate and not tampered with",
+      "Ensuring systems are always fast",
+      "Ensuring data is stored in the cloud",
+    ],
+    answer: "Ensuring data is accurate and not tampered with",
+  },
+  {
+    question: "What is fault tolerance in a system?",
+    options: [
+      "The ability to prevent all failures",
+      "The ability to continue operating even when components fail",
+      "The ability to reduce system costs",
+      "The ability to increase system speed",
+    ],
+    answer: "The ability to continue operating even when components fail",
+  },
+  {
+    question:
+      "Which of the following is an example of redundancy in fault tolerance?",
+    options: [
+      "Using backup systems",
+      "Increasing system speed",
+      "Reducing system costs",
+      "Improving user interface design",
+    ],
+    answer: "Using backup systems",
+  },
+  {
+    question: "What is the purpose of a failover system?",
+    options: [
+      "To reduce system costs",
+      "To automatically switch to standby systems when a failure occurs",
+      "To increase system speed",
+      "To improve user interface design",
+    ],
+    answer: "To automatically switch to standby systems when a failure occurs",
+  },
+  {
+    question: "What is the role of load balancing in fault tolerance?",
+    options: [
+      "To reduce system costs",
+      "To distribute workload across multiple servers to prevent overload",
+      "To increase system speed",
+      "To improve user interface design",
+    ],
+    answer:
+      "To distribute workload across multiple servers to prevent overload",
+  },
+  {
+    question: "What is a common technique to prevent phishing attacks?",
+    options: [
+      "Disabling firewalls",
+      "Enabling Multi-Factor Authentication (MFA)",
+      "Using weak passwords",
+      "Ignoring email links",
+    ],
+    answer: "Enabling Multi-Factor Authentication (MFA)",
+  },
+  {
+    question:
+      "What is the purpose of error detection and correction in fault tolerance?",
+    options: [
+      "To increase system speed",
+      "To reduce system costs",
+      "To detect and correct faults automatically",
+      "To improve user interface design",
+    ],
+    answer: "To detect and correct faults automatically",
+  },
+  {
+    question:
+      "Which of the following is an example of a blockchain application?",
+    options: [
+      "Cryptocurrency",
+      "Web browsing",
+      "Word processing",
+      "Image editing",
+    ],
+    answer: "Cryptocurrency",
+  },
+  {
+    question: "What is the primary characteristic of blockchain transactions?",
+    options: [
+      "They are reversible",
+      "They are immutable (cannot be changed)",
+      "They are stored in a single location",
+      "They are controlled by a central authority",
+    ],
+    answer: "They are immutable (cannot be changed)",
+  },
+  {
+    question: "What is the role of AI in everyday life?",
+    options: [
+      "To increase manual labor",
+      "To provide virtual assistants like Siri and Alexa",
+      "To reduce system costs",
+      "To improve user interface design",
+    ],
+    answer: "To provide virtual assistants like Siri and Alexa",
+  },
+  {
+    question: "Which of the following is an example of IoT automation?",
+    options: [
+      "Smart homes with voice-controlled lights",
+      "Manual data entry",
+      "Using a typewriter",
+      "Printing documents",
+    ],
+    answer: "Smart homes with voice-controlled lights",
+  },
+  {
+    question: "What is the purpose of a smart contract in blockchain?",
+    options: [
+      "To increase system speed",
+      "To create self-executing agreements without third parties",
+      "To reduce system costs",
+      "To improve user interface design",
+    ],
+    answer: "To create self-executing agreements without third parties",
+  },
+  {
+    question: "What is the purpose of using IoT in healthcare?",
+    options: [
+      "To increase manual labor",
+      "To monitor patients remotely using wearable devices",
+      "To reduce system costs",
+      "To improve user interface design",
+    ],
+    answer: "To monitor patients remotely using wearable devices",
+  },
+  {
+    question: "What is the primary function of a blockchain?",
+    options: [
+      "To increase system speed",
+      "To record transactions in an immutable ledger",
+      "To reduce system costs",
+      "To improve user interface design",
+    ],
+    answer: "To record transactions in an immutable ledger",
+  },
+  {
+    question: "Which of the following is an example of an AI application?",
+    options: [
+      "Facial recognition for unlocking smartphones",
+      "Manual data entry",
+      "Using a typewriter",
+      "Printing documents",
+    ],
+    answer: "Facial recognition for unlocking smartphones",
+  },
+  {
+    question: "What are the three primary components of a computer system?",
+    options: [
+      "Hardware, Software, Data",
+      "CPU, RAM, Storage",
+      "Input, Processing, Output",
+      "Monitor, Keyboard, Mouse",
+    ],
+    answer: "Hardware, Software, Data",
+  },
+  {
+    question: "Which of the following is an example of an input device?",
+    options: ["Monitor", "Printer", "Keyboard", "Speakers"],
+    answer: "Keyboard",
+  },
+  {
+    question:
+      "When running the command 'tracert google.com', what does each row in the output represent?",
+    options: [
+      "A file on your computer",
+      "A hop (router) between your device and the destination",
+      "A different website",
+      "A network protocol",
+    ],
+    answer: "A hop (router) between your device and the destination",
+  },
+  {
+    question:
+      "In the output of 'tracert google.com', what does the first column represent?",
+    options: [
+      "The IP address of your computer",
+      "The hop number",
+      "The round-trip time (RTT)",
+      "The name of the destination",
+    ],
+    answer: "The hop number",
+  },
+  {
+    question:
+      "In the output of 'tracert google.com', what do the next three columns represent?",
+    options: [
+      "The IP address of the router",
+      "The round-trip time (RTT) in milliseconds",
+      "The name of the destination",
+      "The file size being transmitted",
+    ],
+    answer: "The round-trip time (RTT) in milliseconds",
+  },
+  {
+    question:
+      "In the output of 'tracert google.com', what does the last column represent?",
+    options: [
+      "The IP address or hostname of the router",
+      "The round-trip time (RTT)",
+      "The hop number",
+      "The name of the destination",
+    ],
+    answer: "The IP address or hostname of the router",
+  },
+  {
+    question: "What is the primary role of data in a computer system?",
+    options: [
+      "To store hardware components",
+      "To serve as the raw material for processing",
+      "To connect to the internet",
+      "To display output on the monitor",
+    ],
+    answer: "To serve as the raw material for processing",
+  },
+  {
+    question: "What is the purpose of a computer network?",
+    options: [
+      "To store data",
+      "To share resources and communicate",
+      "To process data",
+      "To display output",
+    ],
+    answer: "To share resources and communicate",
+  },
+  {
+    question:
+      "Which of the following is an example of a Local Area Network (LAN)?",
+    options: [
+      "The internet",
+      "A network connecting computers in a single office",
+      "A network connecting computers across countries",
+      "A network connecting smartphones",
+    ],
+    answer: "A network connecting computers in a single office",
+  },
+  {
+    question: "What is the function of an IP address in a network?",
+    options: [
+      "To store data",
+      "To identify devices on a network",
+      "To process data",
+      "To display output",
+    ],
+    answer: "To identify devices on a network",
+  },
+  {
+    question: "Which protocol is commonly used for internet communication?",
+    options: ["HTTP", "FTP", "TCP/IP", "SMTP"],
+    answer: "TCP/IP",
+  },
+  {
+    question:
+      "What is the main advantage of using computer systems in business?",
+    options: [
+      "Increased manual errors",
+      "Slower processing speeds",
+      "Automation of repetitive tasks",
+      "Reduced connectivity",
+    ],
+    answer: "Automation of repetitive tasks",
+  },
+  {
+    question: "Which of the following is an example of a storage device?",
+    options: ["Monitor", "Printer", "Hard drive", "Keyboard"],
+    answer: "Hard drive",
+  },
+  {
+    question: "What is the role of software in a computer system?",
+    options: [
+      "To physically interact with hardware",
+      "To provide instructions for performing tasks",
+      "To store data permanently",
+      "To connect to the internet",
+    ],
+    answer: "To provide instructions for performing tasks",
+  },
+  {
+    question:
+      "Which of the following is an example of a Wide Area Network (WAN)?",
+    options: [
+      "A network in a single building",
+      "The internet",
+      "A network in a classroom",
+      "A network connecting printers",
+    ],
+    answer: "The internet",
+  },
+  {
+    question: "What does ICMP stand for?",
+    options: [
+      "Internet Control Message Protocol",
+      "Internet Connection Management Protocol",
+      "Internal Communication Message Protocol",
+      "Integrated Control Management Protocol",
+    ],
+    answer: "Internet Control Message Protocol",
+  },
+  {
+    question: "What does UDP stand for?",
+    options: [
+      "User Datagram Protocol",
+      "Universal Data Protocol",
+      "Unified Data Packet",
+      "User Data Packet",
+    ],
+    answer: "User Datagram Protocol",
+  },
+  {
+    question: "What is the primary purpose of a computer system?",
+    options: [
+      "To process, store, and retrieve information",
+      "To display images",
+      "To connect to the internet",
+      "To print documents",
+    ],
+    answer: "To process, store, and retrieve information",
+  },
+  {
+    question: "Which of the following is an example of an output device?",
+    options: ["Keyboard", "Mouse", "Printer", "Scanner"],
+    answer: "Printer",
+  },
+  {
+    question: "What is the function of a protocol in a network?",
+    options: [
+      "To store data",
+      "To govern communication between computers",
+      "To process data",
+      "To display output",
+    ],
+    answer: "To govern communication between computers",
+  },
+  {
+    question: "Which of the following is an example of a processing unit?",
+    options: ["Monitor", "CPU", "Printer", "Keyboard"],
+    answer: "CPU",
+  },
+  {
+    question: "What is the main benefit of automation in computer systems?",
+    options: [
+      "Increased manual labor",
+      "Reduced efficiency",
+      "Faster and more accurate processing",
+      "Decreased connectivity",
+    ],
+    answer: "Faster and more accurate processing",
   },
   {
     question:
@@ -980,27 +1432,6 @@ const questions = [
     answer: "To automatically assign IP addresses to devices",
   },
   {
-    question:
-      "What is the primary purpose of a NAT (Network Address Translation)?",
-    options: [
-      "To allow multiple devices to share a single public IP address",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To encrypt data during transmission",
-    ],
-    answer: "To allow multiple devices to share a single public IP address",
-  },
-  {
-    question: "Which of the following is an example of a cybersecurity attack?",
-    options: [
-      "Phishing",
-      "File Management",
-      "Multitasking",
-      "Resource Allocation",
-    ],
-    answer: "Phishing",
-  },
-  {
     question: "What principle uses backup systems to prevent system failures?",
     options: [
       "Load Balancing",
@@ -1009,6 +1440,17 @@ const questions = [
       "Error Detection",
     ],
     answer: "Redundancy",
+  },
+  {
+    question:
+      "What does the '-w' flag in the 'tracert -w 100 google.com' command do?",
+    options: [
+      "It sets the maximum number of hops to 100",
+      "It sets the timeout for each reply to 100 milliseconds",
+      "It increases the packet size to 100 bytes",
+      "It limits the output to 100 lines",
+    ],
+    answer: "It sets the timeout for each reply to 100 milliseconds",
   },
   {
     question: "Which of the following is an example of a programming language?",
@@ -1020,16 +1462,6 @@ const questions = [
       "Which cybersecurity concept ensures that data remains accurate and unaltered during storage or transit?",
     options: ["Confidentiality", "Integrity", "Availability", "Redundancy"],
     answer: "Integrity",
-  },
-  {
-    question: "What principle uses backup systems to prevent system failures?",
-    options: [
-      "Load Balancing",
-      "Redundancy",
-      "Failover Systems",
-      "Error Detection",
-    ],
-    answer: "Redundancy",
   },
   {
     question: "What does a failover system do in a network?",
@@ -1400,18 +1832,6 @@ const questions = [
     answer: "To map virtual addresses to physical addresses in memory",
   },
   {
-    question:
-      "Which of the following is a key feature of a microkernel architecture?",
-    options: [
-      "It minimizes the kernel's functionality and runs most services in user space",
-      "It combines all system services into a single kernel",
-      "It does not support multitasking",
-      "It is limited to managing local resources only",
-    ],
-    answer:
-      "It minimizes the kernel's functionality and runs most services in user space",
-  },
-  {
     question: "Which of the following is an example of asymmetric encryption?",
     options: ["AES", "3DES", "RSA", "Blowfish"],
     answer: "RSA",
@@ -1432,49 +1852,6 @@ const questions = [
       "Session Hijacking",
     ],
     answer: "SQL Injection",
-  },
-  {
-    question: "Which of the following is a key feature of a NoSQL database?",
-    options: [
-      "It supports flexible, schema-less data models",
-      "It uses SQL for querying data",
-      "It is limited to relational data structures",
-      "It does not support horizontal scaling",
-    ],
-    answer: "It supports flexible, schema-less data models",
-  },
-  {
-    question: "What is the primary purpose of a stateful firewall?",
-    options: [
-      "To track the state of active connections and make decisions based on context",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To assign IP addresses to devices",
-    ],
-    answer:
-      "To track the state of active connections and make decisions based on context",
-  },
-  {
-    question: "In cybersecurity, what is the purpose of a digital signature?",
-    options: [
-      "To encrypt data for secure transmission",
-      "To manage file permissions",
-      "To verify the authenticity and integrity of a message or document",
-      "To increase internet speed",
-    ],
-    answer: "To verify the authenticity and integrity of a message or document",
-  },
-  {
-    question:
-      "Which of the following is a key feature of a peer-to-peer (P2P) network?",
-    options: [
-      "It allows devices to share resources directly without a central server",
-      "It requires a central server for all communication",
-      "It is limited to local area networks (LANs)",
-      "It does not support file sharing",
-    ],
-    answer:
-      "It allows devices to share resources directly without a central server",
   },
   {
     question: "What is the primary purpose of a hypervisor in virtualization?",
@@ -1507,17 +1884,6 @@ const questions = [
     ],
     answer:
       "It allows applications to run in isolated environments with shared OS resources",
-  },
-  {
-    question:
-      "What is the primary purpose of a quantum key distribution (QKD) in cryptography?",
-    options: [
-      "To securely distribute encryption keys using quantum mechanics",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To assign IP addresses to devices",
-    ],
-    answer: "To securely distribute encryption keys using quantum mechanics",
   },
   {
     question:
@@ -1600,17 +1966,6 @@ const questions = [
   },
   {
     question:
-      "Which of the following is a key feature of a content-addressable storage system?",
-    options: [
-      "It retrieves data based on its content rather than its location",
-      "It requires a centralized database",
-      "It is limited to managing local resources only",
-      "It does not support scaling",
-    ],
-    answer: "It retrieves data based on its content rather than its location",
-  },
-  {
-    question:
       "What is the primary purpose of a side-channel attack in cybersecurity?",
     options: [
       "To exploit indirect information leakage (e.g., power consumption or timing) to compromise a system",
@@ -1620,18 +1975,6 @@ const questions = [
     ],
     answer:
       "To exploit indirect information leakage (e.g., power consumption or timing) to compromise a system",
-  },
-  {
-    question:
-      "Which of the following is a key feature of a federated learning system?",
-    options: [
-      "It allows machine learning models to be trained across decentralized devices",
-      "It requires centralized data storage",
-      "It is limited to local area networks (LANs)",
-      "It does not support privacy-preserving techniques",
-    ],
-    answer:
-      "It allows machine learning models to be trained across decentralized devices",
   },
   {
     question: "What is the primary purpose of a zero-trust security model?",
@@ -1644,36 +1987,7 @@ const questions = [
     answer:
       "To verify every user and device before granting access to resources",
   },
-  {
-    question: "Which of the following is a key feature of a graph database?",
-    options: [
-      "It uses graph structures to represent and store data",
-      "It is limited to relational data structures",
-      "It does not support complex queries",
-      "It requires a centralized database",
-    ],
-    answer: "It uses graph structures to represent and store data",
-  },
-  {
-    question: "What is the primary purpose of a homomorphic encryption scheme?",
-    options: [
-      "To perform computations on encrypted data without decrypting it",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To assign IP addresses to devices",
-    ],
-    answer: "To perform computations on encrypted data without decrypting it",
-  },
-  {
-    question: "Which of the following is a key feature of a quantum computer?",
-    options: [
-      "It uses qubits to perform computations using quantum mechanics",
-      "It is limited to classical binary operations",
-      "It does not support parallel processing",
-      "It requires a large amount of memory",
-    ],
-    answer: "It uses qubits to perform computations using quantum mechanics",
-  },
+
   {
     question: "What is the primary purpose of a blockchain oracle?",
     options: [
@@ -1695,86 +2009,5 @@ const questions = [
     ],
     answer:
       "It runs code in response to events without requiring server management",
-  },
-  {
-    question:
-      "What is the primary purpose of a differential privacy mechanism?",
-    options: [
-      "To protect individual privacy while allowing data analysis",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To assign IP addresses to devices",
-    ],
-    answer: "To protect individual privacy while allowing data analysis",
-  },
-  {
-    question:
-      "Which of the following is a key feature of a neuromorphic computing system?",
-    options: [
-      "It mimics the structure and function of the human brain",
-      "It is limited to classical binary operations",
-      "It does not support parallel processing",
-      "It requires a large amount of memory",
-    ],
-    answer: "It mimics the structure and function of the human brain",
-  },
-  {
-    question:
-      "What is the primary purpose of a secure enclave in hardware security?",
-    options: [
-      "To provide a protected area for sensitive computations and data storage",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To assign IP addresses to devices",
-    ],
-    answer:
-      "To provide a protected area for sensitive computations and data storage",
-  },
-  {
-    question:
-      "Which of the following is a key feature of a self-sovereign identity system?",
-    options: [
-      "It allows users to control their own identity information without relying on centralized authorities",
-      "It requires centralized data storage",
-      "It is limited to local area networks (LANs)",
-      "It does not support privacy-preserving techniques",
-    ],
-    answer:
-      "It allows users to control their own identity information without relying on centralized authorities",
-  },
-  {
-    question:
-      "What is the primary purpose of a post-quantum cryptography algorithm?",
-    options: [
-      "To provide security against attacks from quantum computers",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To assign IP addresses to devices",
-    ],
-    answer: "To provide security against attacks from quantum computers",
-  },
-  {
-    question:
-      "Which of the following is a key feature of a homomorphic encryption scheme?",
-    options: [
-      "It allows computations to be performed on encrypted data without decrypting it",
-      "It requires centralized data storage",
-      "It is limited to local area networks (LANs)",
-      "It does not support privacy-preserving techniques",
-    ],
-    answer:
-      "It allows computations to be performed on encrypted data without decrypting it",
-  },
-  {
-    question:
-      "What is the primary purpose of a zero-knowledge proof in cryptography?",
-    options: [
-      "To prove the validity of a statement without revealing any additional information",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To assign IP addresses to devices",
-    ],
-    answer:
-      "To prove the validity of a statement without revealing any additional information",
   },
 ];
