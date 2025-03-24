@@ -1636,6 +1636,91 @@ const questions = [
     answer: "Address Resolution Protocol",
   },
   {
+    question:
+      "Which component is responsible for rendering graphics on a monitor?",
+    options: ["CPU", "RAM", "GPU", "SSD"],
+    answer: "GPU",
+  },
+  {
+    question:
+      "Which Python script would rename all files in a folder with a prefix?",
+    options: [
+      "Using `os.listdir()` and `os.rename()`",
+      "Using `pandas.read_csv()`",
+      "Using `requests.get()`",
+      "Using `numpy.array()`",
+    ],
+    answer: "Using `os.listdir()` and `os.rename()`",
+  },
+  {
+    question: "What does IoT stand for?",
+    options: [
+      "Internet of Transactions",
+      "Internet of Things",
+      "Integrated Online Technology",
+      "Internal Operations Tool",
+    ],
+    answer: "Internet of Things",
+  },
+  {
+    question: "What does CLI stand for?",
+    options: [
+      "Command Line Input",
+      "Computer Logic Interface",
+      "Command Line Interface",
+      "Common Language Interpreter",
+    ],
+    answer: "Command Line Interface",
+  },
+  {
+    question:
+      "Which component is often referred to as the 'brain' of the computer?",
+    options: ["RAM", "CPU", "GPU", "Power Supply"],
+    answer: "CPU",
+  },
+  {
+    question:
+      "In Linux/macOS, which command performs the same function as 'tracert' in Windows?",
+    options: ["traceroute", "route", "nslookup", "netstat"],
+    answer: "traceroute",
+  },
+  {
+    question: "What is the purpose of the motherboard in a computer system?",
+    options: [
+      "To store data permanently",
+      "To connect and communicate between all hardware components",
+      "To display output on the monitor",
+      "To provide internet connectivity",
+    ],
+    answer: "To connect and communicate between all hardware components",
+  },
+  {
+    question:
+      "Which component temporarily stores data being processed by the CPU?",
+    options: ["HDD", "SSD", "RAM", "ROM"],
+    answer: "RAM",
+  },
+  {
+    question: "What does the `os.path.join()` function do in Python?",
+    options: [
+      "Deletes a file",
+      "Combines directory paths into a valid file path",
+      "Encrypts a file",
+      "Sends HTTP requests",
+    ],
+    answer: "Combines directory paths into a valid file path",
+  },
+  {
+    question: "What is the function of a power supply unit (PSU)?",
+    options: [
+      "To cool the computer",
+      "To convert AC power to DC power for computer components",
+      "To manage network connections",
+      "To display graphics",
+    ],
+    answer: "To convert AC power to DC power for computer components",
+  },
+  {
     question: "What does FTP stand for?",
     options: [
       "File Transfer Protocol",
@@ -1890,6 +1975,12 @@ const questions = [
       "Redundancy",
     ],
     answer: "Error Detection & Correction",
+  },
+  {
+    question:
+      "After configuring a firewall rule to block unauthorized access, which tool can be used to verify if the rule is working?",
+    options: ["Ping", "Traceroute", "Telnet", "Wireshark"],
+    answer: "Telnet",
   },
   {
     question:
