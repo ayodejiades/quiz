@@ -483,8 +483,9 @@ h2 {
 
 .quiz-navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: 2rem;
+  gap: 1rem;
 }
 
 /* Results Screen */
@@ -713,6 +714,16 @@ h2 {
     margin: 1rem 0;
   }
 
+  .quiz-navigation {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+  
+  .quiz-navigation button {
+    flex: 1;
+    min-width: 0;
+    padding: 0.75rem;
+  }
   #question {
     font-size: 1.1rem;
   }

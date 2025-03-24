@@ -15,17 +15,6 @@ const questions = [
     answer: "To process data and control other components",
   },
   {
-    question: "What is a deadlock in operating systems?",
-    options: [
-      "When a process is terminated unexpectedly",
-      "When two or more processes wait indefinitely for resources held by each other",
-      "When a process consumes too much CPU time",
-      "When the system crashes due to hardware failure",
-    ],
-    answer:
-      "When two or more processes wait indefinitely for resources held by each other",
-  },
-  {
     question:
       "Which type of attack involves intercepting communication between two parties without their knowledge?",
     options: [
@@ -54,12 +43,6 @@ const questions = [
   },
   {
     question:
-      "Which of the following is an example of a Layer 4 protocol in the OSI model?",
-    options: ["HTTP", "IP", "TCP", "Ethernet"],
-    answer: "TCP",
-  },
-  {
-    question:
       "What is the primary difference between symmetric and asymmetric encryption?",
     options: [
       "Symmetric encryption uses a single key, while asymmetric encryption uses a key pair",
@@ -69,6 +52,58 @@ const questions = [
     ],
     answer:
       "Symmetric encryption uses a single key, while asymmetric encryption uses a key pair",
+  },
+  {
+    question: "What does the 'C' in the CIA Triad stand for?",
+    options: ["Control", "Confidentiality", "Compliance", "Connectivity"],
+    answer: "Confidentiality",
+  },
+  {
+    question: "What does the 'I' in the CIA Triad stand for?",
+    options: ["Integration", "Integrity", "Internet", "Interface"],
+    answer: "Integrity",
+  },
+  {
+    question: "What does the 'A' in the CIA Triad stand for?",
+    options: [
+      "Accessibility",
+      "Availability",
+      "Authentication",
+      "Authorization",
+    ],
+    answer: "Availability",
+  },
+  {
+    question:
+      "What does a '*' (asterisk) in the output of 'tracert google.com' indicate?",
+    options: [
+      "A successful response from the router",
+      "A timeout or no response from the router",
+      "The final destination has been reached",
+      "The hop number is unknown",
+    ],
+    answer: "A timeout or no response from the router",
+  },
+  {
+    question: "What does the 'ping' command stand for?",
+    options: [
+      "Packet Internet or Inter-Network Groper",
+      "Packet Inter-Network Gateway",
+      "Protocol Internet Gateway",
+      "Packet Inter-Network Grabber",
+    ],
+    answer: "Packet Internet or Inter-Network Groper",
+  },
+  {
+    question:
+      "What is the primary goal of ensuring availability in cybersecurity?",
+    options: [
+      "To prevent unauthorized access to data",
+      "To ensure data is accurate and unaltered",
+      "To ensure systems and data are accessible when needed",
+      "To encrypt sensitive information",
+    ],
+    answer: "To ensure systems and data are accessible when needed",
   },
   {
     question:
@@ -145,6 +180,45 @@ const questions = [
     answer: "To manage hardware resources",
   },
   {
+    question:
+      "What is the purpose of limiting the maximum number of hops in the 'tracert' command?",
+    options: [
+      "To increase the speed of the trace",
+      "To reduce the amount of data displayed",
+      "To focus on a specific segment of the network path",
+      "All of the above",
+    ],
+    answer: "All of the above",
+  },
+  {
+    question:
+      "What is the default maximum number of hops in the 'tracert' command?",
+    options: ["15 hops", "30 hops", "50 hops", "100 hops"],
+    answer: "30 hops",
+  },
+  {
+    question:
+      "What happens if the 'tracert' command reaches the default maximum number of hops?",
+    options: [
+      "The command stops and displays the results up to that point",
+      "The command continues indefinitely",
+      "The command restarts from the beginning",
+      "The command switches to a different protocol",
+    ],
+    answer: "The command stops and displays the results up to that point",
+  },
+  {
+    question:
+      "Which command would you use to limit the 'tracert' command to 15 hops?",
+    options: [
+      "tracert -h 15 google.com",
+      "tracert -w 15 google.com",
+      "tracert -m 15 google.com",
+      "tracert -t 15 google.com",
+    ],
+    answer: "tracert -h 15 google.com",
+  },
+  {
     question: "Which of the following is an example of system software?",
     options: [
       "Microsoft Word",
@@ -183,9 +257,9 @@ const questions = [
   {
     question: "What is an IP address used for?",
     options: [
-      "To identify a device on a network",
       "To encrypt user passwords",
       "To store files in the cloud",
+      "To identify a device on a network",
       "To increase processing speed",
     ],
     answer: "To identify a device on a network",
@@ -193,10 +267,10 @@ const questions = [
   {
     question: "What does DHCP stand for?",
     options: [
+      "Dynamic Host Configuration Process",
       "Dynamic Host Configuration Protocol",
-      "Data Hosting Control Protocol",
-      "Distributed Hardware Configuration Process",
-      "Domain Host Connection Protocol",
+      "Dynamic Hosting Control Protocol",
+      "Dynamic Hosting Configuration Protocol",
     ],
     answer: "Dynamic Host Configuration Protocol",
   },
@@ -209,6 +283,76 @@ const questions = [
       "A protocol for wireless communication",
     ],
     answer: "A security system that monitors and controls network traffic",
+  },
+  {
+    question: "What is the first step to install Linux on VirtualBox?",
+    options: [
+      "Create a new virtual machine and assign RAM",
+      "Configure network settings",
+      "Install essential software",
+      "Download VirtualBox and a Linux ISO",
+    ],
+    answer: "Download VirtualBox and a Linux ISO",
+  },
+  {
+    question:
+      "What is the minimum recommended amount of RAM to assign to a Linux virtual machine in VirtualBox?",
+    options: ["512 MB", "1 GB", "2 GB", "4 GB"],
+    answer: "2 GB",
+  },
+  {
+    question: "What does 'Telnet' stand for?",
+    options: [
+      "Telecommunication Network",
+      "Terminal Network",
+      "Telephone Network",
+      "Teletype Network",
+    ],
+    answer: "Teletype Network",
+  },
+  {
+    question: "What is the primary purpose of Telnet?",
+    options: [
+      "To securely transfer files over a network",
+      "To encrypt network communication",
+      "To provide remote access to another computer over a network",
+      "To diagnose network connectivity issues",
+    ],
+    answer: "To provide remote access to another computer over a network",
+  },
+  {
+    question:
+      "What is the purpose of selecting the Linux ISO as the boot device during VirtualBox setup?",
+    options: [
+      "To configure network settings",
+      "To start the Linux installation process",
+      "To assign RAM to the virtual machine",
+      "To install essential software",
+    ],
+    answer: "To start the Linux installation process",
+  },
+  {
+    question:
+      "Which command is used to install updates on a Linux system after installation?",
+    options: [
+      "sudo apt update && sudo apt upgrade",
+      "sudo install updates",
+      "sudo update linux",
+      "sudo apt-get install updates",
+    ],
+    answer: "sudo apt update && sudo apt upgrade",
+  },
+  {
+    question:
+      "What is the purpose of enabling shared folders in VirtualBox after installing Linux?",
+    options: [
+      "To increase the virtual machine's RAM",
+      "To allow file sharing between the host and guest operating systems",
+      "To configure network settings",
+      "To install essential software",
+    ],
+    answer:
+      "To allow file sharing between the host and guest operating systems",
   },
   {
     question: "What is a primary function of network protocols?",
@@ -668,6 +812,61 @@ const questions = [
       "Imperative Programming",
     ],
     answer: "Functional Programming",
+  },
+  {
+    question:
+      "Which type of operating system is designed to execute a series of jobs without manual intervention?",
+    options: [
+      "Real-Time Operating System",
+      "Batch Operating System",
+      "Distributed Operating System",
+      "Network Operating System",
+    ],
+    answer: "Batch Operating System",
+  },
+  {
+    question:
+      "Which type of operating system is used in environments where response time is critical, such as air traffic control systems?",
+    options: [
+      "Batch Operating System",
+      "Real-Time Operating System",
+      "Distributed Operating System",
+      "Network Operating System",
+    ],
+    answer: "Real-Time Operating System",
+  },
+  {
+    question:
+      "Which type of operating system manages a group of independent computers and makes them appear as a single system?",
+    options: [
+      "Batch Operating System",
+      "Real-Time Operating System",
+      "Distributed Operating System",
+      "Network Operating System",
+    ],
+    answer: "Distributed Operating System",
+  },
+  {
+    question:
+      "Which type of operating system is designed to manage and coordinate network resources, such as file sharing and printer access?",
+    options: [
+      "Batch Operating System",
+      "Real-Time Operating System",
+      "Distributed Operating System",
+      "Network Operating System",
+    ],
+    answer: "Network Operating System",
+  },
+  {
+    question:
+      "Which type of operating system is commonly used in personal computers and workstations?",
+    options: [
+      "Batch Operating System",
+      "Real-Time Operating System",
+      "Time-Sharing Operating System",
+      "Distributed Operating System",
+    ],
+    answer: "Time-Sharing Operating System",
   },
   {
     question:
@@ -1368,16 +1567,6 @@ const questions = [
     answer: "To allow multiple devices to share a single public IP address",
   },
   {
-    question: "What is the primary purpose of a proxy server?",
-    options: [
-      "To act as an intermediary between clients and servers",
-      "To increase internet speed",
-      "To manage file sharing",
-      "To encrypt data during transmission",
-    ],
-    answer: "To act as an intermediary between clients and servers",
-  },
-  {
     question: "Which of the following is an example of a programming paradigm?",
     options: [
       "Object-Oriented Programming",
@@ -1388,9 +1577,63 @@ const questions = [
     answer: "Object-Oriented Programming",
   },
   {
+    question: "Why are specific ports blocked in a firewall configuration?",
+    options: [
+      "To increase internet speed",
+      "To prevent unauthorized access to services running on those ports",
+      "To assign IP addresses to devices",
+      "To store data for the network",
+    ],
+    answer: "To prevent unauthorized access to services running on those ports",
+  },
+  {
+    question:
+      "Which port is commonly blocked to prevent unauthorized Telnet access?",
+    options: ["Port 21", "Port 23", "Port 80", "Port 443"],
+    answer: "Port 23",
+  },
+  {
+    question:
+      "What is the purpose of blocking port 21 in a firewall configuration?",
+    options: [
+      "To prevent unauthorized FTP access",
+      "To block web traffic",
+      "To block email services",
+      "To block Telnet access",
+    ],
+    answer: "To prevent unauthorized FTP access",
+  },
+  {
+    question:
+      "Which of the following ports is commonly blocked to prevent unauthorized remote desktop access?",
+    options: ["Port 22", "Port 25", "Port 3389", "Port 8080"],
+    answer: "Port 3389",
+  },
+  {
+    question:
+      "What is the impact of blocking port 80 in a firewall configuration?",
+    options: [
+      "It prevents HTTP web traffic",
+      "It prevents FTP file transfers",
+      "It blocks email services",
+      "It blocks Telnet access",
+    ],
+    answer: "It prevents HTTP web traffic",
+  },
+  {
     question: "Which of the following is an example of a network protocol?",
     options: ["HTTP", "HTML", "CSS", "JavaScript"],
     answer: "HTTP",
+  },
+  {
+    question: "What does ARP stand for in networking?",
+    options: [
+      "Address Resolution Protocol",
+      "Advanced Routing Protocol",
+      "Automatic Routing Protocol",
+      "Address Routing Protocol",
+    ],
+    answer: "Address Resolution Protocol",
   },
   {
     question: "What does FTP stand for?",
@@ -1834,29 +2077,6 @@ const questions = [
   },
   {
     question:
-      "What is the primary purpose of a deadlock detection algorithm in an operating system?",
-    options: [
-      "To identify and resolve situations where processes are waiting indefinitely for resources",
-      "To allocate CPU time to processes",
-      "To manage file storage on disk",
-      "To handle user authentication",
-    ],
-    answer:
-      "To identify and resolve situations where processes are waiting indefinitely for resources",
-  },
-  {
-    question:
-      "Which of the following is a characteristic of a distributed operating system?",
-    options: [
-      "It allows multiple computers to work together as a single system",
-      "It runs on a single machine with multiple cores",
-      "It is limited to managing local resources only",
-      "It does not support multitasking",
-    ],
-    answer: "It allows multiple computers to work together as a single system",
-  },
-  {
-    question:
       "What is the primary purpose of the 'traceroute' command in networking?",
     options: [
       "To trace the path packets take from source to destination",
@@ -1897,18 +2117,6 @@ const questions = [
       "Immutability",
     ],
     answer: "Encapsulation",
-  },
-  {
-    question:
-      "In functional programming, what is the primary characteristic of a pure function?",
-    options: [
-      "It always produces the same output for the same input and has no side effects",
-      "It modifies the state of the program",
-      "It uses objects to represent data",
-      "It follows a step-by-step execution flow",
-    ],
-    answer:
-      "It always produces the same output for the same input and has no side effects",
   },
   {
     question:
@@ -2000,10 +2208,10 @@ const questions = [
     question:
       "Which of the following is a key feature of the IPv6 protocol compared to IPv4?",
     options: [
-      "Larger address space",
       "Smaller packet size",
       "Lower security",
       "Limited scalability",
+      "Larger address space",
     ],
     answer: "Larger address space",
   },
@@ -2023,6 +2231,16 @@ const questions = [
     answer: "RSA",
   },
   {
+    question: "Which of the following is a common use case for a proxy server?",
+    options: [
+      "To act as a firewall",
+      "To bypass geographic restrictions on content",
+      "To assign IP addresses to devices",
+      "To encrypt all network traffic",
+    ],
+    answer: "To bypass geographic restrictions on content",
+  },
+  {
     question:
       "Which attack exploits unvalidated input to execute arbitrary SQL queries?",
     options: [
@@ -2032,6 +2250,27 @@ const questions = [
       "Session Hijacking",
     ],
     answer: "SQL Injection",
+  },
+  {
+    question:
+      "What is the purpose of blocking specific ports (e.g., port 23 for Telnet) in a firewall configuration?",
+    options: [
+      "To increase internet speed",
+      "To prevent unauthorized access to services running on those ports",
+      "To assign IP addresses to devices",
+      "To store data for the network",
+    ],
+    answer: "To prevent unauthorized access to services running on those ports",
+  },
+  {
+    question: "What is the primary purpose of a proxy server?",
+    options: [
+      "To store data for the network",
+      "To act as an intermediary between a client and a server",
+      "To encrypt all network traffic",
+      "To assign IP addresses to devices",
+    ],
+    answer: "To act as an intermediary between a client and a server",
   },
   {
     question: "What is the primary purpose of a hypervisor in virtualization?",

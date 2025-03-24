@@ -7,6 +7,7 @@ let quizQuestions = [];
 let questionCount = 10; // Default question count
 let selectedTimer = 5; // Default timer in minutes
 let answerSelected = false; // Track if an option has been selected
+let answeredQuestions = []; // Track which questions have been answered
 
 // DOM Elements
 const setupScreen = document.getElementById("setup-screen");
@@ -17,6 +18,7 @@ const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
 const questionContainer = document.getElementById("question-container");
 const nextButton = document.getElementById("next-btn");
+const prevButton = document.getElementById("prev-btn"); // New prev button
 const timerDisplay = document.getElementById("timer-display");
 const timerElement = document.getElementById("time");
 const currentQuestionNum = document.getElementById("current-question-num");
@@ -118,6 +120,7 @@ function initializeQuiz() {
   // Reset quiz state
   currentQuestionIndex = 0;
   score = 0;
+  answeredQuestions = []; // Reset answered questions array
 
   // Set timer based on selection (convert minutes to seconds)
   timeLeft = selectedTimer * 60;
@@ -232,6 +235,11 @@ function updateTimerDisplay() {
   }
 }
 
+// Check if question has been answered
+function isQuestionAnswered(index) {
+  return answeredQuestions.includes(index);
+}
+
 // Load question
 function loadQuestion() {
   if (currentQuestionIndex >= quizQuestions.length) {
@@ -239,13 +247,18 @@ function loadQuestion() {
     return;
   }
 
-  // Reset answer selected state for new question
-  answerSelected = false;
+  // Set answer selected state based on whether this question has been answered
+  answerSelected = isQuestionAnswered(currentQuestionIndex);
 
   const currentQuestion = quizQuestions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   optionsElement.innerHTML = "";
-  nextButton.disabled = true; // Disable next button until an option is selected
+  
+  // Set next button state
+  nextButton.disabled = !answerSelected && currentQuestionIndex < quizQuestions.length - 1;
+  
+  // Set prev button state - only enable if we're not on the first question
+  prevButton.disabled = currentQuestionIndex === 0;
 
   // Update question counter
   currentQuestionNum.textContent = currentQuestionIndex + 1;
@@ -263,12 +276,45 @@ function loadQuestion() {
   currentQuestion.options.forEach((option) => {
     const button = document.createElement("button");
     button.textContent = option;
-    button.addEventListener("click", () => {
-      if (!answerSelected) {
-        // Only allow selection if no answer has been selected yet
-        selectOption(button, option);
+    
+    // If question has been answered, show the result and disable interaction
+    if (isQuestionAnswered(currentQuestionIndex)) {
+      // Check if this option is the selected one from before
+      if (currentQuestion.selectedOption === option) {
+        button.classList.add("selected");
+        if (option === currentQuestion.answer) {
+          button.classList.add("correct");
+        } else {
+          button.classList.add("incorrect");
+        }
+      } 
+      // Always highlight the correct answer
+      else if (option === currentQuestion.answer) {
+        button.classList.add("correct");
       }
-    });
+      
+      // Disable all buttons for answered questions
+      button.disabled = true;
+      
+      // Show feedback for previously answered question
+      if (currentQuestion.selectedOption === currentQuestion.answer) {
+        showFeedback("Correct!", true);
+      } else {
+        showFeedback(
+          `Incorrect! The correct answer is: ${currentQuestion.answer}`,
+          false
+        );
+      }
+    } else {
+      // For unanswered questions, add click event listener
+      button.addEventListener("click", () => {
+        if (!answerSelected) {
+          // Only allow selection if no answer has been selected yet
+          selectOption(button, option);
+        }
+      });
+    }
+    
     optionsElement.appendChild(button);
   });
 }
@@ -279,6 +325,9 @@ function selectOption(buttonElement, option) {
 
   // Set answer selected state to true
   answerSelected = true;
+  
+  // Add this question to answered questions array
+  answeredQuestions.push(currentQuestionIndex);
 
   // Enable next button now that an option is selected
   nextButton.disabled = false;
@@ -288,6 +337,10 @@ function selectOption(buttonElement, option) {
 
   // Check if answer is correct
   const currentQuestion = quizQuestions[currentQuestionIndex];
+  
+  // Store the selected option for when revisiting this question
+  currentQuestion.selectedOption = option;
+  
   if (option === currentQuestion.answer) {
     score++;
     buttonElement.classList.add("correct"); // Add correct class for styling
@@ -308,6 +361,11 @@ function selectOption(buttonElement, option) {
       false
     ); // Show feedback for incorrect answer
   }
+  
+  // Disable all option buttons after selection
+  optionsElement.querySelectorAll("button").forEach(btn => {
+    btn.disabled = true;
+  });
 }
 
 // Show feedback after selecting an option
@@ -333,17 +391,21 @@ function showFeedback(message, isCorrect) {
 
 // Handle next question button
 nextButton.addEventListener("click", () => {
-  // Only proceed if an option is selected
-  if (!answerSelected) {
-    return;
-  }
-
-  // Move to next question
-  currentQuestionIndex++;
-  if (currentQuestionIndex < quizQuestions.length) {
+  // Only proceed if we're not at the end
+  if (currentQuestionIndex < quizQuestions.length - 1) {
+    currentQuestionIndex++;
     loadQuestion();
   } else {
     endQuiz();
+  }
+});
+
+// Handle previous question button
+prevButton.addEventListener("click", () => {
+  // Only go back if we're not at the first question
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    loadQuestion();
   }
 });
 
