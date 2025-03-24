@@ -840,16 +840,6 @@ const questions = [
     answer: "128 bits",
   },
   {
-    question: "What is the main advantage of IPv6 over IPv4?",
-    options: [
-      "Faster processing speed",
-      "Smaller address size",
-      "Larger address space",
-      "Simpler configuration",
-    ],
-    answer: "Larger address space",
-  },
-  {
     question: "Which of the following is a private IP address range?",
     options: [
       "192.168.0.0 to 192.168.255.255",
@@ -1995,17 +1985,6 @@ const questions = [
       "Centralized control",
     ],
     answer: "Redundancy",
-  },
-  {
-    question:
-      "What is the primary purpose of a Content Delivery Network (CDN)?",
-    options: [
-      "To distribute content geographically and reduce latency",
-      "To encrypt data during transmission",
-      "To manage file sharing",
-      "To assign IP addresses to devices",
-    ],
-    answer: "To distribute content geographically and reduce latency",
   },
   {
     question: "In cybersecurity, what is the purpose of a honeypot?",
